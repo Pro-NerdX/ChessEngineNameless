@@ -42,4 +42,4 @@ During the execution, you can feed it positions in **FEN** with the following fo
 ```bash
 position fen <FEN str>
 ```
-Replace `<FEN str>` with you FEN position. Use `quit` to exit the program gracefully.
+Replace `<FEN str>` with you **FEN** position. Use `quit` to exit the program gracefully.
