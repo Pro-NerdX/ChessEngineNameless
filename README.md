@@ -43,3 +43,9 @@ During the execution, you can feed it positions in **FEN** with the following fo
 position fen <FEN str>
 ```
 Replace `<FEN str>` with you **FEN** position. Use `quit` to exit the program gracefully.
+
+## Suggestions for Names
+
+- `I_win_in_poly_time`
+
+- `Dommbeidel` / `Dommbeidl`

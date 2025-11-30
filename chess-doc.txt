@@ -1,0 +1,123 @@
+black to move:
+r . . q k b n r
+p p p . p p p p
+. . n . . . . .
+. . . p . b . .
+. . P P . B . .
+. Q . . . . . .
+P P . . P P P P
+R N . . K B N R
+
+chess.Board.turn
+False
+
+white to move:
+r . . q k b n r
+p p p . p p p p
+. . n . . . . .
+. . . p . b . .
+. . P P . B . .
+. Q . . . . . .
+P P . . P P P P
+R N . . K B N R
+
+chess.Board.turn
+True
+
+(now the black-to-move version is used again)
+
+chess.Board.attackers(chess.Board.turn, chess.D4)
+. . . . . . . .
+. . . . . . . .
+. . 1 . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+
+chess.Board.attackers_mask(chess.Board.turn, chess.C4)
+34359738368
+
+chess.Board.attacks(chess.B1)
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+1 . 1 . . . . .
+. . . 1 . . . .
+. . . . . . . .
+
+chess.Board.attacks(chess.B3)
+. . . . . . . .
+. 1 . . . . . .
+. 1 . . . . . .
+. 1 . . . . . .
+1 1 1 . . . . .
+1 . 1 1 1 1 1 1
+1 1 1 . . . . .
+. . . 1 . . . .
+
+chess.Board.bishops
+2305843147189518368
+
+chess.Board.can_claim_draw()
+False
+
+chess.Board.captures_compulsory
+False
+
+chess.Board.pieces(chess.BISHOP, chess.WHITE)
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . 1 . .
+. . . . . . . .
+. . . . . . . .
+. . . . . 1 . .
+
+chess.Board.piece_at(chess.A1)
+R
+
+chess.Board.checkers()
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+
+=== new board just for .checkers() ===
+r n b q k b n r
+p p p . p p p p
+. . . . . . . .
+. B . . . . . .
+. . . P p . . .
+. . . . . . . .
+P P P . . P P P
+R N B Q K . N R
+
+chess.Board.checkers()
+ (with the above board). . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. 1 . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+
+chess.Board.checkers_mask()
+8589934592
+=== (other board again) ===
+
+chess.Board.checkers_mask()
+0
+
+chess.Board.status()
+0
+
